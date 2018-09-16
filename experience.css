@@ -10,13 +10,11 @@ body{
 .wrapper{
 	display: grid;
 	width: 90%;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .2fr .18fr 1fr .5fr;
+	grid-template-rows: .2fr .15fr 1fr .3fr;
 	margin: 0 auto;
 }
 .navbar{
 	width: 100%;
-	grid-column: 1/3;
 }
 .navbar ul{
 	display: grid;
@@ -37,105 +35,71 @@ body{
 	text-decoration: none;
 	color:black;
 }
-.navbar li a:hover{
-	color: grey;
-}
 .title{
-	grid-column:1/3;
-	text-align: center;
-	text-shadow: 1px 1px grey;
+	margin-top: 3%;
+}
+.title h1{
+	text-align: center;	
+	font-style: italic;
 	text-decoration: underline;
-	margin-top: 2.5%;
 }
 .topWrapper{
-	display: grid;
-	grid-template-rows: 1fr .8fr;
-	grid-column: 1/3;
-}
-.schoolTitle{
-	font-size: 1.1em;
-	font-weight: bold;
-}
-.schoolExp{
-	display: grid;
-	grid-template-rows: .1fr 1fr;
-	grid-row: 1/2;
-}
-#title{
-	font-size: 1.5em;
-	font-weight: bolder;
+	grid-row:3/4;
+	margin-top: 2%;
 	text-align: center;
 }
-.schoolExp ul{
-	display: grid;
-	grid-template-rows: 1fr 1fr 1fr;
-	list-style: none;
-	padding-left: 0; 
+#title{
+	font-size: 1.4em;
+	font-weight: bold;
+	text-decoration: underline;
 }
-.schoolExp li{
-	border:2px solid;
-	font-size: 1.1em;
+.topWrapper ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+.topWrapper li{
+	margin-top: 1.5%;
+}
+.topWrapperTitle{
+	font-weight: bold;
+	font-size: 1.2em;
 }
 #italic{
 	font-style: italic;
 }
 .workExp{
-	margin-top: 2%;
-	display: grid;
-	grid-template-rows: .1fr .8fr;
-}
-.workExp ul{
-	list-style: none;
-	padding-left: 0;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
-	height: 100%;
-}
-.workExp li{
-	border:2px solid;
-}
-.workTitle{
-	font-size: 1.1em;
-    font-weight: bold;
+	margin-top: 3%;
 }
 .bottomWrapper{
-	grid-column: 1/3;
-	grid-row:4/5;
-}
-.bottomWrapper ul{
-	list-style: none;
-	padding-left: 0;
-}
-.skillTitle{
-	font-size: 1.2em;
-	font-weight: bold;
-	margin-top: 3%;
+	grid-row: 4/5;
+	margin-top: 4%;
 	text-align: center;
-	text-decoration: underline;
 }
 .skills ul{
+	list-style-type: none;
+	padding-left: 0;
 	display: grid;
-	grid-template-columns:1fr 1fr; 
-	grid-template-rows:1fr 1fr 1fr;
-	margin-top: 3%;
+	grid-template-columns: 1fr 1fr;
 }
-.skills li{
-	text-align: center;
+.skillTitle{
+	font-size: 1.4em;
+	font-weight: bold;
+	text-decoration: underline;
 }
 .contactBar{
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
-	margin-top: 5%;
 }
 
 .contactBar ul{
 	display: grid;
-	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:1fr 1fr 1fr;
 	text-align: center;
-	margin:0 auto;
-	width: 90%;
+	width: 100%;
 	list-style: none;
+	padding-left: 0;
+	margin-top: 1%;
 }
 .contactBar li{
 	margin-top: 2.5%;
@@ -147,250 +111,156 @@ body{
 	color: black;
 	text-decoration: none;
 }
-.footer{
-	width: 80%;
-	position: fixed;
-	bottom: 0;
-}
-@media only screen and (max-width:480px){
-	.contactBar ul{
-		grid-template-rows: 1fr 1fr 1fr;
-		grid-template-columns: 1fr;
-	}
-}
+
+
 @media only screen and (min-width: 481px) and (max-width: 768px){
 	.wrapper{
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .2fr .18fr 1fr 1.5fr .5fr;
+		grid-template-rows: .2fr .18fr 1.1fr 1.1fr;
 	}
-
 	.navbar ul{
-		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
+		grid-template-rows:auto;
 	}
 	.topWrapper{
-		grid-template-rows: 1fr;
+		display: grid;
 		grid-template-columns: 1fr 1fr;
-		margin-top: 3%;
-	}
-	.title{
-		font-style: italic;
-	}
-	#title{
-		font-size: 1.8em;
-		margin-top: 2.5%;
-		text-shadow: 1px 1px grey;
-		text-decoration: underline;
-	}
-	.schoolExp{
-		border:2px solid;
-	}
-	.schoolExp ul{
-		margin-top: 2%;
-	}
-	.schoolExp li{
-		text-align: center;
-		border:none;
-	}
-	.workExp{
-		border:2px solid;
-	}
-	.workExp{
-		margin-top: 0;
-	}
-	.workExp li{
-		text-align: center;
-		border:none;
-	}
-	.middlePhoto{
-		grid-column: 1/3;
-		background-image: url("images/programmer.jpeg");
-		background-size: 100% 100%;
-		border:2px solid;
+		grid-column-gap: 2%;
+
 	}
 	.bottomWrapper{
-		grid-row: 5/6;
+		display: grid;
+		grid-template-rows: 1fr .5fr;
+	}
+	.skillImage{
+		grid-row: 1/2;
+		background-image: url("images/skills.png");
+		background-size: 100% 100%;
 	}
 	.skillTitle{
-		font-size: 2em;
+		font-size: 0;
+	}
+	.skills{
+		font-weight: bold;
+		margin-top: 4%;
 	}
 	.skills ul{
-		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: : 1fr 1fr 1fr 1fr;
+	}
+	.contactBar{
+		margin-top: 3%;
+	}
+	.contactBar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.contactBar li{
-		font-size: 1.8em;
+		border:2px solid;
+		background-color: lightgrey;
 	}
 }
 @media only screen and (min-width: 769px) and (max-width: 992px){
 	.wrapper{
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: .2fr .18fr .5fr 1fr .5fr;
+		grid-template-rows: .2fr .18fr 1fr 1fr 1fr;
 	}
-
 	.navbar ul{
-		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-	.topWrapper{
-		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr;
-		margin-top: 3%;
-	}
-	.title{
-		font-style: italic;
-	}
-	#title{
-		font-size: 1.8em;
-		margin-top: 2.5%;
-		text-shadow: 1px 1px grey;
-		text-decoration: underline;
-	}
-	.schoolExp{
-		border:2px solid;
-	}
-	.schoolExp ul{
-		margin-top: 2%;
-	}
-	.schoolExp li{
-		text-align: center;
-		border:none;
-	}
-	.workExp{
-		border:2px solid;
-	}
-	.workExp{
-		margin-top: 0;
-	}
-	.workExp li{
-		text-align: center;
-		border:none;
+		grid-template-rows:auto;
 	}
 	.middlePhoto{
-		grid-column: 1/3;
+		grid-row: 3/4;
+		margin-top: 2%;
 		background-image: url("images/programmer.jpeg");
 		background-size: 100% 100%;
-		border:2px solid;
+	}
+	.topWrapper{
+		grid-row: 4/5;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2%;
+
 	}
 	.bottomWrapper{
 		grid-row: 5/6;
 		display: grid;
-		grid-template-rows: 2fr 1fr;
-	}
-	.skillTitle{
-		font-size: 2em;
-	}
-	.skills{
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-	}
-	.skillTitle{
-		height: 0;
-		font-size: 0em;
-	}
-	.skills ul{
-		grid-row: 1/3;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: : 1fr 1fr 1fr 1fr;
-	}
-	.skills li{
-		font-weight: bold;
+		grid-template-rows: 1fr .5fr;
 	}
 	.skillImage{
-		background-image: url("images/skills.jpg");
+		grid-row: 1/2;
+		background-image: url("images/skills.png");
 		background-size: 100% 100%;
-		grid-row:1/2; 
+	}
+	.skillTitle{
+		font-size: 0;
+	}
+	.skills{
+		font-weight: bold;
+		margin-top: 4%;
+	}
+	.skills ul{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.contactBar{
+		margin-top: 3%;
+	}
+	.contactBar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.contactBar li{
-		font-size: 1.8em;
+		border:2px solid;
+		background-color: lightgrey;
 	}
 }
 @media only screen and (min-width: 993px){
 	.wrapper{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: .1fr .18fr .5fr 1fr .5fr;
+		grid-template-rows: .2fr .18fr 1fr 1fr 1fr;
 	}
-
 	.navbar ul{
-		display: grid;
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr;
-	}
-	.topWrapper{
-		grid-template-rows: 1fr;
-		grid-template-columns: 1fr 1fr;
-		margin-top: 3%;
-	}
-	.title{
-		font-style: italic;
-	}
-	#title{
-		font-size: 1.8em;
-		margin-top: 2.5%;
-		text-shadow: 1px 1px grey;
-		text-decoration: underline;
-	}
-	.schoolExp{
-		border:2px solid;
-	}
-	.schoolExp ul{
-		margin-top: 2%;
-	}
-	.schoolExp li{
-		text-align: center;
-		border:none;
-	}
-	.workExp{
-		border:2px solid;
-	}
-	.workExp{
-		margin-top: 0;
-	}
-	.workExp li{
-		text-align: center;
-		border:none;
+		grid-template-rows:auto;
 	}
 	.middlePhoto{
-		grid-column: 1/3;
+		grid-row: 3/4;
+		margin-top: 2%;
 		background-image: url("images/programmer.jpeg");
 		background-size: 100% 100%;
-		border:2px solid;
+	}
+	.topWrapper{
+		grid-row: 4/5;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 2%;
+
 	}
 	.bottomWrapper{
 		grid-row: 5/6;
 		display: grid;
-		grid-template-rows: 2fr 1fr;
-	}
-	.skillTitle{
-		font-size: 2em;
-	}
-	.skills{
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-	}
-	.skillTitle{
-		height: 0;
-		font-size: 0em;
-	}
-	.skills ul{
-		grid-row: 1/3;
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-template-rows: : 1fr 1fr 1fr 1fr;
-	}
-	.skills li{
-		font-weight: bold;
+		grid-template-rows: 1fr .5fr;
 	}
 	.skillImage{
-		background-image: url("images/skills.jpg");
+		grid-row: 1/2;
+		background-image: url("images/skills.png");
 		background-size: 100% 100%;
-		grid-row:1/2; 
+	}
+	.skillTitle{
+		font-size: 0;
+	}
+	.skills{
+		font-weight: bold;
+		margin-top: 4%;
+	}
+	.skills ul{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.contactBar{
+		margin-top: 3%;
+	}
+	.contactBar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 	.contactBar li{
-		font-size: 1.8em;
+		border:2px solid;
+		background-color: lightgrey;
 	}
 }
