@@ -3,6 +3,9 @@
 	margin: 0;
 	box-sizing: border-box;
 }
+body{
+	background-color: #F3FFFF;
+}
 
 .wrapper{
 	display: grid;
@@ -22,7 +25,7 @@
 	list-style: none;
 }
 .navbar li{
-	font-size: 1.5em;
+	font-size: 2em;
 	border:2px solid;
 	width: 100%;
 	height:100%;
@@ -120,11 +123,10 @@
 	text-align: center;
 }
 .contactBar{
-	position: fixed;
-	bottom: 0;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 5%;
 }
 
 .contactBar ul{
@@ -136,10 +138,9 @@
 	list-style: none;
 }
 .contactBar li{
-	border:2px solid;
+	margin-top: 2.5%;
 	font-size: 1.5em;
 	text-shadow: 1px 1px;
-	background-color: #E6E6FA;
 
 }
 .contactBar li a{
@@ -156,5 +157,240 @@
 		grid-template-rows: 1fr 1fr 1fr;
 		grid-template-columns: 1fr;
 	}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	.wrapper{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .2fr .18fr 1fr 1.5fr .5fr;
+	}
 
+	.navbar ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	.topWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 3%;
+	}
+	.title{
+		font-style: italic;
+	}
+	#title{
+		font-size: 1.8em;
+		margin-top: 2.5%;
+		text-shadow: 1px 1px grey;
+		text-decoration: underline;
+	}
+	.schoolExp{
+		border:2px solid;
+	}
+	.schoolExp ul{
+		margin-top: 2%;
+	}
+	.schoolExp li{
+		text-align: center;
+		border:none;
+	}
+	.workExp{
+		border:2px solid;
+	}
+	.workExp{
+		margin-top: 0;
+	}
+	.workExp li{
+		text-align: center;
+		border:none;
+	}
+	.middlePhoto{
+		grid-column: 1/3;
+		background-image: url("images/programmer.jpeg");
+		background-size: 100% 100%;
+		border:2px solid;
+	}
+	.bottomWrapper{
+		grid-row: 5/6;
+	}
+	.skillTitle{
+		font-size: 2em;
+	}
+	.skills ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: : 1fr 1fr 1fr 1fr;
+	}
+	.contactBar li{
+		font-size: 1.8em;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+	.wrapper{
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .2fr .18fr .5fr 1fr .5fr;
+	}
+
+	.navbar ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	.topWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 3%;
+	}
+	.title{
+		font-style: italic;
+	}
+	#title{
+		font-size: 1.8em;
+		margin-top: 2.5%;
+		text-shadow: 1px 1px grey;
+		text-decoration: underline;
+	}
+	.schoolExp{
+		border:2px solid;
+	}
+	.schoolExp ul{
+		margin-top: 2%;
+	}
+	.schoolExp li{
+		text-align: center;
+		border:none;
+	}
+	.workExp{
+		border:2px solid;
+	}
+	.workExp{
+		margin-top: 0;
+	}
+	.workExp li{
+		text-align: center;
+		border:none;
+	}
+	.middlePhoto{
+		grid-column: 1/3;
+		background-image: url("images/programmer.jpeg");
+		background-size: 100% 100%;
+		border:2px solid;
+	}
+	.bottomWrapper{
+		grid-row: 5/6;
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+	}
+	.skillTitle{
+		font-size: 2em;
+	}
+	.skills{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.skillTitle{
+		height: 0;
+		font-size: 0em;
+	}
+	.skills ul{
+		grid-row: 1/3;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: : 1fr 1fr 1fr 1fr;
+	}
+	.skills li{
+		font-weight: bold;
+	}
+	.skillImage{
+		background-image: url("images/skills.jpg");
+		background-size: 100% 100%;
+		grid-row:1/2; 
+	}
+	.contactBar li{
+		font-size: 1.8em;
+	}
+}
+@media only screen and (min-width: 993px){
+	.wrapper{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: .1fr .18fr .5fr 1fr .5fr;
+	}
+
+	.navbar ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+	.topWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr;
+		margin-top: 3%;
+	}
+	.title{
+		font-style: italic;
+	}
+	#title{
+		font-size: 1.8em;
+		margin-top: 2.5%;
+		text-shadow: 1px 1px grey;
+		text-decoration: underline;
+	}
+	.schoolExp{
+		border:2px solid;
+	}
+	.schoolExp ul{
+		margin-top: 2%;
+	}
+	.schoolExp li{
+		text-align: center;
+		border:none;
+	}
+	.workExp{
+		border:2px solid;
+	}
+	.workExp{
+		margin-top: 0;
+	}
+	.workExp li{
+		text-align: center;
+		border:none;
+	}
+	.middlePhoto{
+		grid-column: 1/3;
+		background-image: url("images/programmer.jpeg");
+		background-size: 100% 100%;
+		border:2px solid;
+	}
+	.bottomWrapper{
+		grid-row: 5/6;
+		display: grid;
+		grid-template-rows: 2fr 1fr;
+	}
+	.skillTitle{
+		font-size: 2em;
+	}
+	.skills{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.skillTitle{
+		height: 0;
+		font-size: 0em;
+	}
+	.skills ul{
+		grid-row: 1/3;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: : 1fr 1fr 1fr 1fr;
+	}
+	.skills li{
+		font-weight: bold;
+	}
+	.skillImage{
+		background-image: url("images/skills.jpg");
+		background-size: 100% 100%;
+		grid-row:1/2; 
+	}
+	.contactBar li{
+		font-size: 1.8em;
+	}
 }

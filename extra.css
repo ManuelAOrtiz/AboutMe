@@ -1,0 +1,254 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: #F3FFFF;
+}
+.wrapper{
+	display: grid;
+	width: 90%;
+	grid-template-rows: .1fr .1fr .6fr 1fr;
+	margin: 0 auto;
+}
+.navbar{
+	width: 100%;
+}
+.navbar ul{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding-left: 0;
+	list-style: none;
+}
+.navbar li{
+	font-size: 2em;
+	border:2px solid;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	background-color: lightgrey;
+	text-shadow: 1px 1px grey;
+}
+.navbar li a{
+	text-decoration: none;
+	color:black;
+}
+.navbar li a:hover{
+	color: grey;
+}
+.title{
+	text-align: center;
+	font-size: 1.8em;
+	margin-top: 4%;
+	font-weight: bold;
+	text-decoration: underline;
+	font-style: oblique;
+	text-shadow: 1px 1px grey;
+}
+.koreaWrapper{
+	display: grid;
+	grid-template-rows: .8fr 1fr;
+}
+.koreaImages{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+}
+.koreaImage{
+	background-image: url(images/littleSeoul.jpg);
+	background-size: 100% 100%;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+.extraText{
+	height: 0px;
+	font-size: 0px;
+}
+.koreaTrip{
+	font-size: 1.1em;
+	margin-top: 3%;
+}
+.koreaTrip span{
+	font-weight: bold;
+}
+.japanWrapper{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+}
+.japanImages{
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 1fr;
+}
+.japanImage{
+	background-image: url(images/littleTokyo.jpg);
+	background-size: 100% 100%;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+.japanTrip{
+	font-size: 1.1em;
+	margin-top: 3%;
+}
+.japanTrip span{
+	font-weight: bold;
+}
+.contactBar{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.contactBar ul{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	text-align: center;
+	margin:0 auto;
+	width: 90%;
+	list-style: none;
+}
+.contactBar li{
+	margin-top: 2.5%;
+	font-size: 1.5em;
+	text-shadow: 1px 1px;
+
+}
+.contactBar li a{
+	color: black;
+	text-decoration: none;
+}
+@media only screen and (min-width: 481px) and (max-width: 768px){
+	.navbar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+
+	}
+	.title{
+		margin-top: 3%;
+	}
+	.koreaWrapper{
+		margin-top: 4%;
+		grid-template-rows: 1fr;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap: 1.5%;
+	}
+	.koreaTrip{
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.japanWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+		margin-top: 4%;
+		grid-column-gap: 1.5%;
+	}
+	.japanImage{
+		background-image: url("images/tokyoMid.jpg");
+	}
+	.contactBar ul{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+@media only screen and (min-width: 769px) and (max-width: 992px){
+	.navbar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+
+	}
+	.title{
+		margin-top: 3%;
+	}
+	.koreaWrapper{
+		margin-top: 4%;
+		grid-template-rows: 1fr;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap: 1.5%;
+	}
+	.koreaImage{
+		background-image: url("images/Seoul.jpg");
+	}
+	.koreaImage:hover{
+		background-image:url("images/littleSeoul.jpg");
+	}
+
+	.japanWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+		margin-top: 4%;
+		grid-column-gap: 1.5%;
+	}
+	.japanImages{
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+	.japanImage{
+		background-image: url("images/tokyoMid.jpg");
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.contactBar ul{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+@media only screen and (min-width: 993px){
+		.navbar ul{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+
+	}
+	.title{
+		margin-top: 3%;
+	}
+	.koreaWrapper{
+		margin-top: 4%;
+		grid-template-rows: 1fr;
+		grid-template-columns:1fr 1fr;
+		grid-column-gap: 1.5%;
+	}
+	.extraText{
+		height: 100%;
+		font-size: 1em;
+		margin-top: 2%;
+	}
+	.koreaImages{
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
+	.koreaImage{
+		background-image: url("images/Seoul.jpg");
+	}
+	.koreaFlag{
+		background-image: url("images/koreaFlag.jpg");
+		background-size: 100% 100%;
+	}
+
+	.japanWrapper{
+		grid-template-rows: 1fr;
+		grid-template-columns: 1fr 1fr; 
+		margin-top: 4%;
+		grid-column-gap: 1.5%;
+	}
+	.japanImages{
+		display: grid;
+		grid-template-rows: 1fr 1fr; 
+		grid-row: 1/2;
+		grid-column: 2/3;
+	}
+	.japanImage{
+		background-image: url("images/tokyo.jpg");
+		background-size: 100% 100%;
+	}
+	.japanFlag{
+		background-image: url("images/japanFlag.jpg");
+		background-size: 100% 100%;
+	}
+	.contactBar ul{
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+}
