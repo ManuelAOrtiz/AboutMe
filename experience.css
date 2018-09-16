@@ -1,12 +1,160 @@
- Volume in drive C is Acer
- Volume Serial Number is 22E9-FF8E
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 
- Directory of C:\Users\Devolth\Desktop\Class\Assignments\css
+.wrapper{
+	display: grid;
+	width: 90%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: .2fr .18fr 1fr .5fr;
+	margin: 0 auto;
+}
+.navbar{
+	width: 100%;
+	grid-column: 1/3;
+}
+.navbar ul{
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	padding-left: 0;
+	list-style: none;
+}
+.navbar li{
+	font-size: 1.5em;
+	border:2px solid;
+	width: 100%;
+	height:100%;
+	text-align: center;
+	background-color: lightgrey;
+	text-shadow: 1px 1px grey;
+}
+.navbar li a{
+	text-decoration: none;
+	color:black;
+}
+.navbar li a:hover{
+	color: grey;
+}
+.title{
+	grid-column:1/3;
+	text-align: center;
+	text-shadow: 1px 1px grey;
+	text-decoration: underline;
+	margin-top: 2.5%;
+}
+.topWrapper{
+	display: grid;
+	grid-template-rows: 1fr .8fr;
+	grid-column: 1/3;
+}
+.schoolTitle{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+.schoolExp{
+	display: grid;
+	grid-template-rows: .1fr 1fr;
+	grid-row: 1/2;
+}
+#title{
+	font-size: 1.5em;
+	font-weight: bolder;
+	text-align: center;
+}
+.schoolExp ul{
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr;
+	list-style: none;
+	padding-left: 0; 
+}
+.schoolExp li{
+	border:2px solid;
+	font-size: 1.1em;
+}
+#italic{
+	font-style: italic;
+}
+.workExp{
+	margin-top: 2%;
+	display: grid;
+	grid-template-rows: .1fr .8fr;
+}
+.workExp ul{
+	list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	height: 100%;
+}
+.workExp li{
+	border:2px solid;
+}
+.workTitle{
+	font-size: 1.1em;
+    font-weight: bold;
+}
+.bottomWrapper{
+	grid-column: 1/3;
+	grid-row:4/5;
+}
+.bottomWrapper ul{
+	list-style: none;
+	padding-left: 0;
+}
+.skillTitle{
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 3%;
+	text-align: center;
+	text-decoration: underline;
+}
+.skills ul{
+	display: grid;
+	grid-template-columns:1fr 1fr; 
+	grid-template-rows:1fr 1fr 1fr;
+	margin-top: 3%;
+}
+.skills li{
+	text-align: center;
+}
+.contactBar{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
 
-09/14/2018  02:33 PM    <DIR>          .
-09/14/2018  02:33 PM    <DIR>          ..
-09/14/2018  02:33 PM                 0 experience.css
-09/14/2018  02:33 PM               365 index.css
-09/14/2018  02:33 PM               419 portfolio.css
-               3 File(s)            784 bytes
-               2 Dir(s)  192,354,119,680 bytes free
+.contactBar ul{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr;
+	text-align: center;
+	margin:0 auto;
+	width: 90%;
+	list-style: none;
+}
+.contactBar li{
+	border:2px solid;
+	font-size: 1.5em;
+	text-shadow: 1px 1px;
+	background-color: #E6E6FA;
+
+}
+.contactBar li a{
+	color: black;
+	text-decoration: none;
+}
+.footer{
+	width: 80%;
+	position: fixed;
+	bottom: 0;
+}
+@media only screen and (max-width:480px){
+	.contactBar ul{
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-columns: 1fr;
+	}
+
+}
