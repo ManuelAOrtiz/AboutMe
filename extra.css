@@ -151,6 +151,10 @@ body{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
+	.contactBar li{
+		border:2px solid;
+		background-color: lightgrey;
+	}
 }
 @media only screen and (min-width: 769px) and (max-width: 992px){
 	.navbar ul{
@@ -192,6 +196,10 @@ body{
 	.contactBar ul{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
+	}
+	.contactBar li{
+		border:2px solid;
+		background-color: lightgrey;
 	}
 }
 @media only screen and (min-width: 993px){
@@ -250,5 +258,8 @@ body{
 		grid-template-columns: 1fr 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
-}
+	.contactBar li{
+		border:2px solid;
+		background-color: lightgrey;
+	}
 }
